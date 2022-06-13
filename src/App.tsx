@@ -9,7 +9,7 @@ import { CartProvider } from './hooks/useCart';
 
 const App = (): JSX.Element => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <CartProvider>
         <GlobalStyles />
         <Header />
